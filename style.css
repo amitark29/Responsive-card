@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.main-page {
+  width: 100%;
+  /* height: 841px; */
+  background: url(11757.jpg) center;
+  background-size: cover;
+}
+.main-page h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+.contianer {
+  width: 1170px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+}
+.training-section {
+  flex-basis: 23%;
+  background: rgba(240, 240, 240, 0.6);
+  /* border: 1px solid red; */
+  margin: 10px 0;
+  box-shadow: 0px 0px 10px 3px lightgreen;
+  text-align: center;
+  padding: 20px 0;
+}
+.training-section img{
+    position: relative;
+    mix-blend-mode:darken;
+}
+.training-section h3 {
+  padding: 15px 0;
+}
+.training-section p {
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+}
+.training-section button {
+  padding: 10px 15px;
+  background-color: rgb(89, 89, 240);
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+}
+.training-section:hover {
+  background-color: rgba(240, 240, 240, 0.8);
+}
+.training-section:hover h3,
+p {
+  color: black;
+}
+.training-section:hover button {
+  background-color: aliceblue;
+  color: rgb(89, 89, 240);
+}
+/* for desktop */
+@media (min-width: 1024px) {
+  .contianer {
+    width: 100%;
+  }
+  .training-section {
+    width: 100%;
+  }
+}
+
+/* for tablet screen  */
+@media screen and (min-width:769px) and (max-width:1023px) {
+    h1 {
+        color: blue;
+      }
+      .contianer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+      }
+      .training-section {
+        flex-basis: 50%;
+        
+      }
+}
+    
+ 
+  
+
+
+/* for mobile responsive */
+
+@media (max-width: 768px) {
+  h1 {
+    color: aqua;
+  }
+  .contianer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  .training-section {
+    flex-basis: 80%;
+  }
+}
